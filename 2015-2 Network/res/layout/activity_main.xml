@@ -1,0 +1,387 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+    
+
+	    		
+    	    	<LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="80dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.2"
+			    	android:text="URL"
+			    	android:gravity="center_horizontal"/>
+			    	<EditText 
+			    	android:layout_width="0dip"
+			    	android:layout_height="80dip"
+			    	android:layout_weight="0.8"
+			    	android:hint="다운로드 받을 파일의 URL"
+			    	android:id="@+id/main_et_url"
+			    	android:textSize="13dip"/>
+    	    	</LinearLayout>
+    	    	
+    	    	<LinearLayout 
+    	    	android:layout_width="fill_parent"
+    	    	android:layout_height="40dip"
+    	    	android:orientation="horizontal"
+    	    	android:gravity="center">
+			    	<Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:text="샘플 URL"
+			        android:onClick="mOnClick"
+			        android:id="@+id/main_btn_sel"
+			        android:textSize="13dip"/>
+    	    	    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:text="Connect"
+			        android:onClick="mOnClick"
+			        android:id="@+id/main_btn_connect"
+			        android:textSize="13dip"/>
+    	    	    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dip"
+			        android:text="Clear"
+			        android:onClick="mOnClick"
+			        android:id="@+id/main_btn_clear"
+			        android:textSize="13dip"/>
+    	    	</LinearLayout>
+	    	    
+    	    	
+	    	    
+	    	    
+	    	    <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000"
+    			android:layout_marginTop="10dip">
+    			</LinearLayout>
+	    	    
+	    	    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+	    		    <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="SSID"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_ssid"
+			    	android:gravity="center_horizontal"/>
+	    		</LinearLayout>
+	    		
+	    	    <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+	    	    	    	
+	    		<LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+	    		    <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Wifi 신호세기(dBm)"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_singal"
+			    	android:gravity="center_horizontal"/>
+	    		</LinearLayout>
+	    		
+	    		<LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+	    		
+			    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Throughput(bps)"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_throughput"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>
+				
+			    <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+			    
+			    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Default Router IP"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_gateway"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>
+			    
+			    <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+			    	    
+			    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="35dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Default Router RTT(ms)"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_rtt"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>
+			    
+			    
+			     <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+			    
+			    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Server IP"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_server"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>
+			    
+			    
+			    <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+			    
+			    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Server RTT(ms)"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_rttserver"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>
+			    
+				
+			    <LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+			    	    
+			    <LinearLayout 
+    	    	android:layout_width="fill_parent"
+			    android:layout_height="25dip"
+			    android:background="#ffffff"
+			    android:orientation="horizontal"
+			    android:weightSum="1"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.4"
+			    	android:text="Channel"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="0dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="0.6"
+			    	android:text=""
+			    	android:id="@+id/main_tv_ch"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>	
+			    				 
+ 				<LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+			    
+	    	    
+
+    			<LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000"
+    			android:layout_marginTop="10dip">
+    			</LinearLayout>
+    			
+		    	<TextView 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="20dip"
+		    	android:text="접속 가능한 WIFI 목록"
+		    	android:textSize="13dip"
+		    	android:background="#f0f0f0"
+		    	android:gravity="center"/>
+		    	
+		    	<LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+		    	
+		    	<LinearLayout 
+		  	    android:layout_width="fill_parent"
+			    android:layout_height="20dip"
+			    android:background="#f0f0f0"
+			    android:orientation="horizontal"
+			    android:gravity="center_vertical">
+			        <TextView 
+			    	android:layout_width="40dip"
+			    	android:layout_height="wrap_content"
+			    	android:text="Level"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="200dip"
+			    	android:layout_marginLeft="20dip"
+			    	android:layout_height="wrap_content"
+			    	android:text="SSID"
+			    	android:gravity="center_horizontal"/>
+			    	<TextView 
+			    	android:layout_width="40dip"
+			    	android:layout_height="wrap_content"
+			    	android:layout_marginLeft="10dip"
+			    	android:text="Ch"
+			    	android:gravity="center_horizontal"/>
+			    </LinearLayout>
+			    
+		    	<LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+		    	
+		    	<ListView 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="150dip"
+		    	android:background="#f0f0f0"
+		    	android:id="@+id/main_lv"></ListView>
+		    	
+		    	<LinearLayout 
+    			android:layout_width="fill_parent"
+    			android:layout_height="1dip"
+    			android:background="#000000">
+    			</LinearLayout>
+    	
+		 <!--  
+    	<Button 
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:text="Save Result"
+        android:onClick="mOnClick"
+        android:id="@+id/main_btn_save"
+        android:textSize="13dip"
+        android:layout_gravity="center_horizontal"/>
+  	
+		<LinearLayout  
+	    android:layout_width="fill_parent"
+	    android:layout_weight="0.55"
+	    android:layout_height="0dip"
+	    android:background="#202020">
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="0dip"
+		    android:layout_weight="0.05"
+		    android:background="#ffffff"
+		    android:orientation="horizontal">
+		</LinearLayout>
+		 -->
+</LinearLayout>
